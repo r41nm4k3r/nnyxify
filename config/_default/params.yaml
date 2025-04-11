@@ -2,6 +2,4 @@ _merge: deep
 admin:
   publish_mode: simple
   cms: tinacms
-    config:
-    id: false # use ID for dir/name files and relation
   git: git-gateway
