@@ -3,7 +3,7 @@ imports:
   # -> Hugolify content types and taxonomies available https://www.hugolify.io/docs/sections/
 
   # Core theme
-  - path: https://github.com/sebousan/venn-capital
+  - path: github.com/hugolify/hugolify-theme-2
   - path: github.com/hugolify/hugolify-theme
 
 
