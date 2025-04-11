@@ -1,4 +1,3 @@
 _merge: deep
 admin:
   publish_mode: simple
-  cms: staticcms
