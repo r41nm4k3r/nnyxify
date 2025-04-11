@@ -2,6 +2,7 @@ links:
   - title: Home
     blank: true
     is_highlighted: true
+    url: https://nnyxify.netlify.app/
   - title: Contact Me
     url: https://nnyxify.netlify.app/contact/
     links: []
