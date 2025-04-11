@@ -32,6 +32,6 @@
     "cleanall": "hugo mod clean --all",
     "decapcms": "npx decap-server",
     "netlifycms": "npx netlify-cms-proxy-server",
-    "cms": "yarn decapcms"
+    "cms": "decapcms"
   }
 }
