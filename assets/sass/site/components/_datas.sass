@@ -1,0 +1,38 @@
+.datas
+    @include padding(4rem 2rem)
+    background: $primary-gradient
+    color: white
+    text-align: center
+    li:not(:last-child)
+        @include margin-bottom(3rem)
+    dt
+        @include font-size(2rem)
+        color: $secondary
+        font-weight: $font-weight-normal
+        line-height: 1.4
+        @include media-breakpoint-up(xxl)
+            font-size: 2.813rem
+    dd
+        @include font-size(1.25rem)
+        line-height: 1.4
+        @include media-breakpoint-up(xxl)
+            font-size: 1.625rem
+
+    @include media-breakpoint-only(md)
+        padding-left: 1rem
+        padding-right: 1rem
+        ul
+            display: flex
+            li
+                flex: 1
+                padding-left: 1rem
+                padding-right: 1rem
+            li:not(:last-child)
+                margin-bottom: 0
+   
+    @include media-breakpoint-between(md, lg)
+        ul
+            dt
+                font-size: 2rem
+            dd
+                font-size: 1rem

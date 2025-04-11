@@ -1,0 +1,11 @@
+.page-persons
+    main
+        @include padding-top($global-spacing-double)
+    .grid
+        @extend .person-large
+        h1
+            @include font-size($h3-font-size)
+        .heading
+            margin-bottom: 0
+        > .featured-image
+            width: 100%

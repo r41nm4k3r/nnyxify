@@ -1,0 +1,39 @@
+.publication
+    --bs-card-spacer-x: 0
+    --bs-card-border-width: 0
+    --bs-card-border-radius: 0
+    --bs-card-inner-border-radius: 0
+    --bs-card-bg: transparent
+    --bs-card-cap-bg: transparent
+    --bs-card-cap-padding-x: 0
+    @extend .card
+    .media
+        --bs-aspect-ratio: 76.175%
+    .metas
+        @extend .card-footer
+        padding-top: 0
+        @include media-breakpoint-up(md)
+            flex-wrap: nowrap
+            .date
+                flex-shrink: 0
+            .press
+                overflow: hidden
+                text-overflow: ellipsis
+                white-space: nowrap
+    .name
+        color: $body-color
+        font-size: 1rem
+        font-weight: $font-weight-bold
+    .category
+        @extend .badge
+        @extend .badge-secondary
+        border-bottom-left-radius: 0
+        border-top-left-radius: 0
+        letter-spacing: px2rem(3)
+        pointer-events: none
+        position: absolute
+        text-transform: uppercase
+        top: 2.5rem
+        z-index: 1
+    a
+        @extend .stretched-link

@@ -1,0 +1,14 @@
+.page-publications
+    .heading
+        h1
+            @include font-size($h2-font-size)
+            max-width: 100%
+    .description
+        margin-bottom: 0
+    .press + .description
+        @include margin-top($global-spacing-semi)
+    .category a
+        @extend .badge
+        @extend .badge-secondary
+        text-decoration: none
+    

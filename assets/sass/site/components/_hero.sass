@@ -1,0 +1,72 @@
+.hero
+    .container
+        @include padding-top(calc(#{$global-spacing} + #{$header-height}))
+        @include media-breakpoint-only(md)
+            min-height: calc(#{$hero-min-height} * .8)
+        @include media-breakpoint-up(xxl)
+            padding-top: $header-height-xxl
+    .row
+        position: relative
+        @include media-breakpoint-down(md)
+            align-items: flex-start
+    picture
+        transform: none
+        transition-property: opacity
+    .surtitle
+        margin-bottom: px2rem(40)
+        @include media-breakpoint-up(xxl)
+            margin-bottom: px2rem(60)
+    h1
+        color: $header-color
+        margin-bottom: 0
+    .surtitle,
+    h1
+        span
+            color: $secondary
+    &-content
+        @extend .col-md-10
+        @extend .col-xl-9
+    &-cover
+        overflow: hidden
+        img
+            display: block
+            margin-left: auto
+            object-fit: none
+            width: auto
+        @include media-breakpoint-down(md)
+            display: flex !important
+            img
+                height: auto
+                margin-top: auto !important
+                width: 100%
+        @include media-breakpoint-down(lg)
+            img
+                margin-top: 0
+    & + .btn-down
+        --bs-btn-padding-x: 1rem
+        --bs-btn-padding-y: 0.75rem
+        @extend .btn-secondary
+        font-size: px2rem(20)
+        height: px2rem(60)
+        left: 50%
+        line-height: px2rem(36)
+        margin-left: - px2rem(30)
+        margin-top: - px2rem(30)
+        position: absolute
+        width: px2rem(60)
+        z-index: 1
+        @if variable-exists(bootstrap-icons-map)
+            &:hover
+                &::before
+                    transform: translateY(.3rem)
+            &::before
+                @include icon("arrow-down")
+                transition: transform $transition-duration $transition-effect
+        
+        @include media-breakpoint-up(xxl)
+            font-size: px2rem(30)
+            height: px2rem(90)
+            line-height: px2rem(66)
+            margin-left: - px2rem(45)
+            margin-top: - px2rem(45)
+            width: px2rem(90)

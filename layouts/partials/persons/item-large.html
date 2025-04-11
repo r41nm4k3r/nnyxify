@@ -1,0 +1,10 @@
+<article class="person person-large" itemscope itemtype="https://schema.org/Person"{{ partial "func/SetAnim" (dict "element" "item") }}>
+  <meta itemprop="url" content="{{ .Permalink }}">
+  <div class="content">
+    <h2>{{  partial "func/PrepareHTML" .Params.firstname }} <b>{{  partial "func/PrepareHTML" .Params.lastname }}</b></h2>
+    {{- partial "commons/body.html" . -}}
+  </div>
+  {{ partial "persons/item/media" . }}
+  {{ partial "persons/contact-list" . }}
+  {{ partial "persons/item/resume" . }}
+</article>

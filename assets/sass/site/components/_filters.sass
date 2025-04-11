@@ -1,0 +1,65 @@
+.offcanvas.filters
+    @extend .offcanvas-lg
+    @extend .offcanvas-end
+    @include media-breakpoint-up(xxl)
+        margin-top: $global-spacing
+        margin-bottom: $global-spacing
+        position: static
+        transform: none
+        transition: none
+        visibility: visible
+        width: auto
+        z-index: auto
+        .header
+            display: none
+
+    .list
+        li::before
+            content: none
+        a
+            @extend .badge
+            color: $primary-medium
+            background-color: $light
+            text-decoration: none
+            &.active,
+            &:hover
+                color: white
+                background-color: $primary-lighten
+        &-publications_authors
+            ol
+                display: flex
+
+    @include media-breakpoint-down(xxl)
+        background-color: var(--bs-offcanvas-bg) !important
+        .list
+            li
+                margin-top: px2rem(20)
+            &-publications_authors
+                ol
+                    flex-direction: column-reverse
+
+    @include media-breakpoint-up(xxl)
+        .content
+            display: flex
+            justify-content: center
+        .content > div:not(:first-child)
+            padding-top: 0
+        .content > div:not(:last-child)
+            border-bottom: 0
+            padding-bottom: 0
+        .list
+            p
+                display: none
+            ol
+                display: flex
+                justify-content: center
+            li
+                margin-left: px2rem(12)
+                margin-right: px2rem(12)
+            &-publications_authors
+                ol
+                    flex-direction: row-reverse
+
+.btn-filter
+    @extend .d-xxl-none
+    margin-right: auto

@@ -1,0 +1,44 @@
+_merge: deep
+animation: true
+gutter: 30
+container:
+  desktop: 1498
+hero:
+  _merge: deep
+  cover: "600x600"
+  cover_mobile: "360x360"
+persons:
+  _merge: deep
+  image:
+    _merge: deep
+    desktop: "499x499"
+    mobile: "300x300"
+  thumbnail:
+    _merge: deep
+    desktop: "515x465"
+    mobile: "300x300"
+    scrollsnap: "240x240"
+posts:
+  _merge: deep
+  thumbnail:
+    _merge: deep
+    desktop: "499x499"
+    mobile: "300x300"
+    scrollsnap: "240x240"
+publications:
+  _merge: deep
+  thumbnail:
+    _merge: deep
+    desktop: "512x390"
+    mobile: "300x229"
+blocks:
+  _merge: deep
+  carousel:
+    desktop: "804x748"
+    mobile: "360x335"
+  cta:
+    desktop: "624x467"
+    mobile: "300x200"
+  quote:
+    _merge: deep
+    desktop: "1023x767"

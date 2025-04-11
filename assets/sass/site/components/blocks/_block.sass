@@ -1,0 +1,30 @@
+/*! purgecss start ignore */
+[class*="block-"]
+    @include padding-bottom($global-spacing)
+    @include padding-top($global-spacing)
+    .heading
+        @include margin-bottom($global-spacing)
+        .surtitle:last-child
+            margin-bottom: 0
+        .surtitle:not(:last-child)
+            @include margin-bottom($global-spacing)
+    @include media-breakpoint-down(md)
+        .heading
+            h2 + p
+                margin-top: 1rem
+    @include media-breakpoint-up(lg)
+        .heading
+            align-items: flex-start
+            margin-left: 0
+            max-width: 100%
+            text-align: left
+            h2,
+            p:not(.surtitle)
+                padding-left: 8.33333333%
+                padding-right: calc(8.33333333% * 3)
+    @include media-breakpoint-up(xxl)
+        .heading
+            margin-bottom: px2rem(90)
+            .surtitle:not(:last-child)
+                margin-bottom: px2rem(90)
+/*! purgecss end ignore */

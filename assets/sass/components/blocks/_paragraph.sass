@@ -1,0 +1,23 @@
+.block-paragraph
+    h2:last-child,
+    .text:last-child p:last-child
+        margin-bottom: 0
+    .row > div
+        @extend .offset-md-1
+    .surtitle
+        @include margin-bottom($global-spacing)
+    .btn
+        @extend .btn-secondary
+        @extend .btn-arrow
+
+    @include media-breakpoint-up(md)
+        .col-md-8
+            .surtitle
+                margin-left: -13%
+        .col-md-10
+            .surtitle
+                margin-left: -10.2%
+
+    @include media-breakpoint-up(lg)
+        .surtitle
+            margin-bottom: px2rem(90)

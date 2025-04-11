@@ -1,0 +1,38 @@
+button:
+  down: Descendre au contenu
+persons:
+  who: Qui sommes-nous
+posts:
+  press:
+    read: Lire vers le communiqué de presse
+publications:
+  all: Tous les articles
+  discover: Découvrir l’article
+  latest: Derniers articles
+  latest_person: Derniers articles de {{ .Person }}
+  list: Liste des articles de la personne concernée
+  list_person: Liste des articles de {{ .Person }}
+  more: Découvrir plus d’articles
+  more_person: Découvrir plus d’articles de {{ .Person }}
+  press: 
+    more: Découvrir l’article complet
+  title:
+    one: Article
+    other: Articles
+  title_person: Articles de {{ .Person }}
+  write_by: Rédigé par {{ .Person }}
+publications_authors:
+  discover: Découvrir l’auteur
+  latest: Derniers auteurs
+  more: Découvrir plus d’auteur
+  title:
+    one: Auteur
+    other: Auteurs
+publications_categories:
+  all: Toutes les catégories
+  discover: Découvrir la catégorie
+  latest: Derniers catégorie
+  more: Découvrir plus de catégorie
+  title:
+    one: Catégorie
+    other: Catégories
